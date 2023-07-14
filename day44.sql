@@ -102,3 +102,12 @@ insert into emp26_test select * from emp26;
 select * from emp26;
 select * from emp26_test;
 
+commit;
+
+create table emp35 as select * from emp17;
+select * from emp35;
+
+update emp35 set deptno = 30;
+
+update emp35 set deptno = 20 where empno = 21;
+
